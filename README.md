@@ -1,16 +1,8 @@
-# Property Pulse
+# Property Pusle
 
-> A web application to help you find your next rental property.
+A web application to help you find your next rental property
 
-This is the main project from my [Next 14 From Scratch Course](https://www.traversymedia.com/nextjs-from-scratch)
-
-This is the second iteration of the app/course that uses server actions instead of API routes.
-
-The `_theme_files` folder contains the pure HTML files with Tailwind classes.
-
-<img src="/public/images/screen.jpg" />
-
-## Features
+# Features
 
 Here are some of the current features that Property Pulse has:
 
@@ -34,26 +26,15 @@ Here are some of the current features that Property Pulse has:
 
 Property Pulse uses the following technologies:
 
-- [Next.js](https://nextjs.org/)
-- [React](https://reactjs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [MongoDB](https://www.mongodb.com/)
-- [Mongoose](https://mongoosejs.com/)
-- [NextAuth.js](https://next-auth.js.org/)
-- [React Icons](https://react-icons.github.io/react-icons/)
-- [Photoswipe](https://photoswipe.com/)
-- [Cloudinary](https://cloudinary.com/)
-- [Mapbox](https://www.mapbox.com/)
-- [React Map GL](https://visgl.github.io/react-map-gl/)
-- [React Geocode](https://www.npmjs.com/package/react-geocode)
-- [React Spinners](https://www.npmjs.com/package/react-spinners)
-- [React Toastify](https://fkhadra.github.io/react-toastify/)
-- [React Share](https://www.npmjs.com/package/react-share)
+- React, Next.js, NextAuth.js, Tailwind CSS, MongoDB, Mongoose
+- React Icons, React Map GL, React Geocode, React Spinner, React Toastify, React Share
+- Mapbox, Photoswipe, Cloudinary
 
 ## Getting Started
 
 ### Prerequisites
 
+- Docker if you want to run the app from "_docker-compose.yml_" file
 - Node.js version 18 or higher
 - MongoDB Atlas account and a cluster. Sign up and create a cluster at [MongoDB](https://www.mongodb.com/)
 - Cloudinary account. Sign up at [Cloudinary](https://cloudinary.com/)
@@ -74,20 +55,22 @@ Rename the `env.example` file to `.env` and fill in the following environment va
 - Get your Mapbox token from your Mapbox account and add it to `NEXT_PUBLIC_MAPBOX_TOKEN`.
 - Get your Google Geocoding API key from your Google console account and add it to `NEXT_PUBLIC_GOOGLE_GEOCODING_API_KEY`.
 
-### Install Dependencies
+### Run the application with Docker
+
+```bash
+docker compose up
+```
+
+OR
+
+### Install Dependencies and then run the application with your source code
 
 ```bash
 npm install
 ```
-
-### Run the Development Server
 
 ```bash
 npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details

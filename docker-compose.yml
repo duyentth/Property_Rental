@@ -1,0 +1,22 @@
+services:
+  property-rental:
+    image: dntranstudy/property-rental
+    container_name: property-rental
+    ports:
+      - "3000:3000"
+
+    depends_on:
+      - mongodb-property-rental
+    env_file:
+      - .env
+  mongodb-property-rental:
+    image: mongo
+    container_name: mongodb-property-rental
+    ports:
+      - 27017
+    volumes:
+      - mongodb_property_rental_data:/data/db
+    environment:
+      - MONGO_INITDB_DATABASE=property_rental
+volumes:
+  mongodb_property_rental_data:
